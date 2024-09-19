@@ -23,7 +23,6 @@
 }
 
 body {
-  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: 'abeezeeregular';
 }
@@ -57,4 +56,8 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+button img {
+  height: 2rem;
 }
