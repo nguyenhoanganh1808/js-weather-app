@@ -25,28 +25,76 @@
         </div>
       </form>
       <div class="toggle">
-        <button>°C</button>
+        <button id="cel">°C</button>
         <hr />
-        <button>°F</button>
+        <button class="buttonSelected" id="fah">°F</button>
       </div>
     </header>
     <main>
       <div class="location">
-        <p>Friday, 12 May 2023 | Local time: 11:44AM</p>
-        <h2>Berlin, BE</h2>
-        <p>Clear</p>
+        <p class="currentDate">Friday, 12 May 2023 | Local time: 11:44AM</p>
+        <h2 class="city">Berlin, BE</h2>
+        <p class="short-des">Clear</p>
       </div>
 
-      <div class="currentCondition" style="background-color: blue">
-        currentCondition
+      <div class="currentCondition">
+        <div>
+          <img
+            class="currentConditionIcon"
+            src="../icons/clear-day.svg"
+            alt=""
+          />
+          <h2 class="currentTemp">21°</h2>
+          <div class="weather-des">
+            <div>
+              <img class="filter-white" src="../icons/thermometer.svg" alt="" />
+              <p class="realFell">Real fell: <span>20°</span></p>
+            </div>
+            <div>
+              <img
+                class="filter-white"
+                src="../icons/water-ouline.svg"
+                alt=""
+              />
+              <p class="humidity">Humidity: <span>36</span>%</p>
+            </div>
+            <div>
+              <img
+                class="filter-white"
+                src="../icons/weather-windy.svg"
+                alt=""
+              />
+              <p class="wind">Wind: <span>9</span>km/h</p>
+            </div>
+          </div>
+        </div>
+        <div class="sun">
+          <div>
+            <img
+              class="filter-white"
+              src="../icons/white-balance-sunny.svg"
+              alt=""
+            />
+            <p class="sunRise">Rise: <b>05:15PM</b></p>
+          </div>
+          <hr />
+          <div>
+            <img class="filter-white" src="../icons/sun-set.svg" alt="" />
+            <p class="sunSet">Set: <b>08:49PM</b></p>
+          </div>
+        </div>
       </div>
 
-      <div class="nextFiveHours" style="background-color: red">
-        nextFiveHours
+      <div class="nextFiveHours">
+        <h2>HOURLY FORECAST</h2>
+        <hr />
+        <div class="weather-grid"></div>
       </div>
 
-      <div class="nextFiveDays" style="background-color: green">
-        nextFiveDays
+      <div class="nextFiveDays">
+        <h2>DAILY FORECAST</h2>
+        <hr />
+        <div class="weather-grid"></div>
       </div>
     </main>
   </body>

@@ -122,5 +122,83 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 24px;
+}
+
+.currentCondition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* margin-bottom: 100px; */
+}
+
+.currentCondition > div > img {
+  width: 3rem;
+}
+
+.weather-des > div > img {
+  width: 1.5rem;
+}
+
+main {
+  padding: 0px 20%;
+}
+
+.currentCondition h2 {
+  font-size: 3rem;
+}
+
+.currentCondition > div:first-child {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-bottom: 24px;
+}
+
+.weather-des > div {
+  display: flex;
+  gap: 24px;
+}
+
+.sun {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.sun > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+img {
+  width: 2rem;
+}
+
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.weather-grid-card {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.nextFiveHours hr,
+.nextFiveDays hr {
+  outline: none;
+  margin: 8px 0px;
+}
+
+.buttonSelected {
+  text-decoration: underline;
 }
