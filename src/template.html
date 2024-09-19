@@ -9,17 +9,45 @@
   <body>
     <header>
       <form>
-        <label for="location">Search for city</label>
-        <input
-          type="search"
-          id="location"
-          name="location"
-          placeholder="Search for city"
-        />
-        <button type="submit">
-          <img src="../icons/search.svg" alt="Search" />
-        </button>
+        <div>
+          <!-- <label for="location">Search for city</label> -->
+          <input
+            type="search"
+            id="location"
+            name="location"
+            placeholder="Search for city"
+          />
+        </div>
+        <div>
+          <button type="submit">
+            <img src="../icons/search.svg" alt="Search" class="filter-white" />
+          </button>
+        </div>
       </form>
+      <div class="toggle">
+        <button>°C</button>
+        <hr />
+        <button>°F</button>
+      </div>
     </header>
+    <main>
+      <div class="location">
+        <p>Friday, 12 May 2023 | Local time: 11:44AM</p>
+        <h2>Berlin, BE</h2>
+        <p>Clear</p>
+      </div>
+
+      <div class="currentCondition" style="background-color: blue">
+        currentCondition
+      </div>
+
+      <div class="nextFiveHours" style="background-color: red">
+        nextFiveHours
+      </div>
+
+      <div class="nextFiveDays" style="background-color: green">
+        nextFiveDays
+      </div>
+    </main>
   </body>
 </html>

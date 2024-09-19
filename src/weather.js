@@ -42,12 +42,11 @@ function weather(data) {
     datetime: data.currentConditions.datetime,
     humidity: data.currentConditions.humidity,
     wind: data.currentConditions.windspeed,
-    fellslike: data.currentConditions.fell,
+    feelslike: data.currentConditions.feelslike,
     visibility: data.currentConditions.visibility,
     sunrise: data.currentConditions.sunrise,
     sunset: data.currentConditions.sunset,
-    tempmax: data.currentConditions.tempmax,
-    tempmin: data.currentConditions.tempmin,
+    icon: data.currentConditions.icon,
     hours: getNextFiveHours(),
     days: getNextFiveDays(),
   };
@@ -62,6 +61,7 @@ async function fetchWeather(location) {
     const response = await fetch(url, { mode: 'cors' });
     const data = await response.json();
     weatherData = weather(data);
+    console.log(data);
   } catch (err) {
     console.log(err);
   }

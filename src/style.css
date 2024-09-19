@@ -25,6 +25,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   font-family: 'abeezeeregular';
+  font-size: 18px;
 }
 
 img,
@@ -58,6 +59,68 @@ h6 {
   isolation: isolate;
 }
 
+body {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: tomato;
+}
+
+header {
+  flex-basis: 50px;
+}
+
+main {
+  flex: 5;
+}
+
 button img {
   height: 2rem;
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+form {
+  display: flex;
+}
+
+input {
+  height: 100%;
+  width: 400px;
+}
+
+button[type='submit'],
+.toggle button {
+  background: none;
+  border: none;
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle {
+  display: flex;
+  height: 1.5rem;
+}
+
+.filter-white {
+  filter: invert(94%) sepia(100%) saturate(0%) hue-rotate(87deg)
+    brightness(107%) contrast(102%);
+}
+
+.location {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
